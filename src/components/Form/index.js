@@ -26,7 +26,7 @@ export default class Form extends PureComponent {
     }
     return (
       <form className={styles.form}>
-        <Field name="id" label="ID" value={this.props.data.id} />
+        <Field name="id" label="Номер" value={this.props.data.id} />
         <Field name="title" label="Название" value={this.props.data.title} />
         <Field name="desc" label="Описание" value={this.props.data.desc} />
       </form>

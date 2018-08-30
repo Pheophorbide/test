@@ -33,6 +33,7 @@ export default class App extends PureComponent {
         />
       </div>
       <div className={styles.columnRight}>
+        <h1 className={styles.title}>Информация о записи</h1>
         <Form
           data={this.state.selectedRow}
         />

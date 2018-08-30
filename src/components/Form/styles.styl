@@ -1,38 +1,29 @@
+@import "../../containers/Root/variables.styl";
+
 .form
   box-sizing border-box
   width 100%
-  display flex
-  flex-direction row
-  justify-content space-between
-  align-items stretch
   font-family Arial, "Helvetica Neue", Helvetica, sans-serif
-  border-left: 1px solid lightgray
 
   .column
     box-sizing border-box
-    width calc(100%/3)
-    border-bottom 1px solid lightgray
-    border-right 1px solid lightgray
-    border-top 1px solid lightgray
+    width 100%
 
   .input
     box-sizing border-box
-    outline none
-    border none
     width 100%
     font-size inherit
     padding: 20px;
+    border: 1px solid borderColor;
+    background-color backgroundColor
 
   .label
     box-sizing border-box
+    color #d1d1d1
     display block
-    padding: 20px;
-    color white
-    font-size 18px
-    border-bottom 1px solid lightgrey
-    background-color lightblue
-    border-right 1px solid lightgrey
+    padding: 20px 0;
+    font-size 16px
 
 
 .empty
-  padding 20px
+  padding 20px 0

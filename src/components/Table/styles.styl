@@ -1,3 +1,5 @@
+@import "../../containers/Root/variables.styl";
+
 .table
   box-sizing border-box
   border 1px solid lightgray
@@ -7,15 +9,15 @@
 
 .row
   &:hover
-    background-color rgba(0,0,0,0.1)
+    background-color backgroundColor
 
 .active
-  background-color rgba(0,0,0,0.1)
+  background-color backgroundColor
 
 .item
   padding 20px
   cursor: pointer
-  border 1px solid lightgray
+  border 1px solid borderColor
   text-align center
 
 .header
@@ -23,7 +25,7 @@
   font-weight bold
   color white
   background-color lightblue
-  border: 1px solid lightgrey
+  border: 1px solid borderColor
 
 .bold
   font-weight bold
