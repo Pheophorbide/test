@@ -11,7 +11,7 @@ export default class TableHeader extends PureComponent {
     return (
       <thead className={styles.header}>
         <tr>
-          <th className={classNames(styles.item, styles.header)}>ID</th>
+          <th className={classNames(styles.item, styles.header)}>Номер</th>
           <th className={classNames(styles.item, styles.header)}>Название</th>
         </tr>
       </thead>
