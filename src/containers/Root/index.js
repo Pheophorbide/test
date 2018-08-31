@@ -23,6 +23,20 @@ export default class App extends PureComponent {
     });
   }
 
+  @bind
+  onRowChange(rowId, rowData) {
+    const selectedRowIndex = this.state.data.findIndex(({ id }) => id === rowId);
+    const data = [...this.state.data];
+    data[selectedRowIndex] = {
+      ...data[selectedRowIndex],
+      ...rowData,
+    };
+
+    this.setState({
+      data,
+    });
+  }
+
   render() {
     return (<div className={styles.container}>
       <div className={styles.columnLeft}>
@@ -36,6 +50,7 @@ export default class App extends PureComponent {
         <h1 className={styles.title}>Информация о записи</h1>
         <Form
           data={this.state.selectedRow}
+          onRowChange={this.onRowChange}
         />
       </div>
     </div>);
